@@ -245,10 +245,41 @@
         <div class="container flex flex-col">
             <div class="flex justify-between items-center gap-7">
                 <span class="text-[60px] leading-[66px] text-black font-semibold">Тарифы и <span class="text-[#4D34EA] italic">возможности</span></span>
-                <div class="flex items-center justify-between bg-[#E4ECFF] p-[7px] rounded-full">
+                <!-- <div class="flex items-center justify-between bg-[#E4ECFF] p-[7px] rounded-full">
                     <button class="text-[#4D34EA] text-lg px-[50px] w-fit">Месяц</button>
                     <button class="text-white text-lg px-[50px] py-[10px] rounded-full bg-[#4D34EA]">Год</button>
-                </div>
+                </div> -->
+                <ul class="flex items-center justify-between bg-[#E4ECFF] py-[12px] px-[7px] rounded-full">
+                    <li>
+                        <input
+                        class="peer sr-only"
+                        type="radio"
+                        value="month"
+                        name="filter"
+                        id="month"
+                        checked
+                        />
+                        <label
+                        class="cursor-pointer text-[#4D34EA] text-lg px-[50px] peer-checked:text-white peer-checked:py-[10px] peer-checked:rounded-full peer-checked:bg-[#4D34EA]"
+                        for="month"
+                        >Месяц</label
+                        >
+                    </li>
+                    <li>
+                        <input
+                        class="peer sr-only"
+                        type="radio"
+                        value="year"
+                        name="filter"
+                        id="year"
+                        />
+                        <label
+                        class="cursor-pointer text-[#4D34EA] text-lg px-[50px] peer-checked:text-white peer-checked:py-[10px] peer-checked:rounded-full peer-checked:bg-[#4D34EA]"
+                        for="year"
+                        >Год</label
+                        >
+                    </li>
+                    </ul>
             </div>
             <div class="flex mt-[60px]">
                 <div class="flex flex-col w-1/3 mt-4 mb-5 rounded-[15px] bg-[#F5F3FF] relative -mr-[1%]">
