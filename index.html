@@ -5,15 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
     <title>Главная</title>
     <style type="text/tailwindcss">
-        @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,600&display=swap');
 		.container {
 		@apply max-[1920px]:max-w-[1290px] mx-auto
 		}
-        body {
-            font-family: 'Jost', sans-serif;
-        }
+        
     </style>
 </head>
 <body class="font-jost">
@@ -35,7 +33,7 @@
     </header>
 
     <!-- Hero-block -->
-    <section class="flex mt-10 ml-[calc((100%-1290px)/2)]">
+    <section class="flex mt-10 ml-[calc((100%-1290px)/2)] min-[1920px]:ml-[calc((100%-1536px)/2)]">
         <div class="flex flex-col mt-16">
             <span class="text-[60px] leading-[66px] text-black font-semibold">
                 Для любого <span class="block whitespace-nowrap">ремонта <span class="text-[#4D34EA] italic">есть смета</span></span> 
@@ -330,9 +328,9 @@
             <div class="flex flex-col w-1/2">
                 <span class="text-[60px] leading-[66px] text-black font-semibold">Остались <span class="text-[#4D34EA] italic">вопросы?</span></span>
                 <span class="text-[25px] mt-[30px]">Оставьте свою электронную почту и мы вышлем вам подробную информацию</span>
-                <form action="#" method="POST" class="flex relative mt-[50px] mr-[56px]">
+                <form action="#" method="POST" class="flex mt-[50px] mr-[56px]">
                     <input type="text" name="email" class="w-full outline-none py-[18px] pl-[30px] bg-[#F5F3FF] rounded-[10px] placeholder:text-[#C7C0EE]" placeholder="Электронная почта">
-                    <button type="submit" class="absolute top-0 right-0 text-white text-lg rounded-[10px] bg-[#4D34EA] hover:bg-[#3b24cd] transition-all duration-300 box-border h-full px-[55px]">Отправить</button>
+                    <button type="submit" class="text-white text-lg py-[18px] rounded-[10px] bg-[#4D34EA] hover:bg-[#3b24cd] transition-all duration-300 box-border px-[55px]">Отправить</button>
                 </form>
                 <div class="flex flex-col gap-[30px] mt-10">
                     <div class="flex gap-4">
